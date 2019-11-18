@@ -1,13 +1,81 @@
 /* Enter your Styles below! */
+.logo{
+	width: 100%;
+	height: auto;
+	margin-left: 5px;
+	margin-top: 5px;
 
-
+}
 body { 
-	font-family: Helvetica, sans-serif;
-	font-size: 16px;
+	font-family:Gill Sans, sans-serif;
+	font-size: 14px;
+	margin:5px 30px;
+
 	 }
 
+body {
+	background-color: #ededed;
+}
+
+.home {
+	background-image: url("../images/homepage-pic.png");
+	background-repeat: no-repeat;
+	background-position: 0px 130px;
+	background-size: 130%;
+
+}
+
+
+}
+
+}
+
+}
+
+.top-par{
+	color: white;
+	line-height: 15px;
+	width: 10px;
+
+}
+
+p {line-height: 20px;
+
+}
+
+
+
+button {
+	background-color: #69c58f;
+	color: white;
+}
+
+.menu-button {
+	background-color: #69c58f;
+	color: white;
+	font-size: 15px;
+
+
+}
+
+
+.italic{
+	font-style: italic;
+	font-weight: bold;
+	color: white;
+	
+	width: 240px;
+}
+
 h1, h2, h3, h4 {
-	font-family: Helvetica, sans-serif;
+	font-family: Arial, sans-serif;
+
+}
+.high {
+	font-weight: bold;
+	color: white;
+	
+	width: 400px;
 }
 
 h1 {
@@ -15,31 +83,56 @@ h1 {
 }
 
 h2 {
-	font-size: 36px;
+	font-size: 48px;
 }
 
 h3 {
-	font-size: 28px;
+	font-size: 17px;
+	font-weight: bold;
+	
+	line-height: 22px;
 }
 h4 {
 	font-size: 24px;
 }
 
-blockquote {
-	margin: 20px 60px;
-	font-family: Helvetica, sans-serif;
+h5 {
+	
 }
+
+h6 {
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+	font-weight: bold;
+}
+
 
 header {margin-bottom: 20px;}
 
+nav {
+	display: flex;
+	justify-content: flex-end;
+	align-items: right;
+	font-size: 12px;
+	padding: 8px 8px;
+	top: 0px;
+	position: absolute;
+	right: 20px;
+	top: 35px;
+}
+nav li{
+	display: inline-block;
+	padding: 0px 10px
+}
+
 /* ensures that your images stretch the width of their containers */
-img { width: 100%; }
+
 
 a { 
-	color: red;
+	color: black;
 	text-decoration: none;
 	 }
-a:hover { color: black; }
+a:hover { color: green; }
 
 .grid {
 	display: grid;
@@ -53,6 +146,280 @@ a:hover { color: black; }
 	background-color: #ccc;
 	padding: 20px;
 }
+
+
+
+
+.quote {
+	line-height: 15px;
+font-family:Gill Sans, sans-serif;
+color: white;
+	font-size: 12px;
+}
+
+
+.iframe {
+	position: left;
+}
+
+
+
+
+
+
+
+
+
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  background: #69c58f;
+}
+
+/* Slides */
+.mySlides {
+  display: none;
+  padding: 80px;
+  text-align: center;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* The dot/bullet/indicator container */
+.dot-container {
+    text-align: center;
+    padding: 15px;
+    background: #ddd;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 10px;
+  width: 10px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* Add a background color to the active dot/circle */
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+.author {
+	color: white;
+}
+
+/* Add an italic font style to all quotes */
+q {font-size: 20px;
+	
+
+
+}
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+.nav, .desktop {
+    display: block;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 900;
+}
+
+.icon {
+    position: fixed;
+    cursor: pointer;
+    top: 5%;
+    right: 0%;
+    width: 40px;
+    height: 45px;
+    transform: translate(-50%, -50%);
+    display: block;
+    z-index: 1000;
+}
+
+.hamburger {
+    width: 40px;
+    height: 4px;
+    line-height: 70px;
+    background: #666;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+    transition: .5s;
+    
+}
+
+.hamburger:before,
+.hamburger:after {
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 4px;
+    background: #666;
+    border-radius: 5px;
+    
+    transition: .5s;
+}
+
+.hamburger:before {
+    top: -10px;
+}
+
+.hamburger:after {
+    top: 10px;
+}
+
+.icon.active .hamburger {
+    background: rgba(0,0,0,0);
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
+}
+
+.icon.active .hamburger:before {
+    top: 0;
+    transform: rotate(45deg);
+}
+
+.icon.active .hamburger:after {
+    top: 0;
+    transform: rotate(135deg);
+}
+
+.menu-mobile {
+    background-color: #efefef;
+    height: 100vh;
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding-top: 150px;
+    font-family:Gill Sans, sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+.menu-mobile, .menu-mobile a {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.menu-mobile a {
+    clear: right;
+    text-decoration: none;
+    color: #333;
+    height: 70px;
+    line-height: 70px;
+}
+.menu-mobile a:hover {
+    color: green;
+}
+
+.desktop, .menu-desktop, .menu-mobile {
+        display: none;
+    }
+/* END OF Mobile Menu */
+
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    /* START of desktop menu for 768 media query */
+    .menu-desktop {
+        width: 100%;
+        display: block;
+        padding: 0;
+        line-height: 50px;
+        justify-content: space-evenly;
+        flex-direction: row;
+        height: 0;
+        text-align: right;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    .menu-desktop a {
+        display: inline-flex;
+        margin-right: 30px;
+        height: 0;
+        line-height: 50px;
+        text-decoration: none;
+        color: #333;
+        justify-content: space-evenly;
+    }
+    .menu-desktop a:hover {
+        color: green;
+    }
+
+    .desktop {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        display: block;
+    }
+
+    header.nav, .menu-mobile {
+        display: none;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*
 font-family: 'Mansalva', cursive;
 font-family: 'Dosis', sans-serif;
