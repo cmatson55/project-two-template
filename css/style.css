@@ -2,46 +2,65 @@
 .logo{
 	width: 100%;
 	height: auto;
-	margin-left: 5px;
+	margin-left: 20px;
 	margin-top: 5px;
 
 }
 body { 
 	font-family:Gill Sans, sans-serif;
 	font-size: 14px;
-	margin:5px 30px;
-
 	 }
 
 body {
 	background-color: #ededed;
 }
 
-.home {
-	background-image: url("../images/homepage-pic.png");
+.background-img{
+	background-image: url(../images/home.jpg);
 	background-repeat: no-repeat;
-	background-position: 0px 130px;
-	background-size: 130%;
+	background-size: 100%;
+	padding-top: 20px;
+	padding-bottom: 120px;
+	background-blend-mode: lighten;
+
+
+	
+	
 
 }
 
 
-}
 
-}
 
-}
 
-}
+
+
 
 .home-paragraph{
 	color: white;
 	line-height: 15px;
-	width: 10px;
+	
 
 }
 
+.home-top-content{
+	margin-left: 30px;
+
+}
+.content-1 {
+	margin-left: 30px;
+	
+
+}
+.content-2{
+	margin-left: 30px;
+	float: left;
+	max-width: 500px
+	width:50%;
+}
+
 p {line-height: 18px;
+	text-align: justify;
 
 }
 
@@ -88,6 +107,11 @@ button{
 }
 
 
+/* responsive */
+
+
+
+
 
 
 
@@ -105,7 +129,7 @@ h1, h2, h3, h4 {
 
 }
 .high {
-	font-weight: bold;
+	font-weight: bolder;
 	color: white;
 	
 	width: 400px;
@@ -120,7 +144,7 @@ h2 {
 }
 
 h3 {
-	font-size: 17px;
+	font-size: 18px;
 	font-weight: bold;
 	
 	line-height: 22px;
@@ -224,6 +248,7 @@ input[type=submit]:hover {
 }
 
 .container {
+	width: 500px;
   border-radius: 5px;
   background-color: #ededed;
   padding: 5px;
@@ -235,7 +260,8 @@ input[type=submit]:hover {
 
 /* Slideshow container */
 .slideshow-container {
-  position: relative;
+	width: 500px;
+	position: relative;
   background: #69c58f;
 }
 
@@ -277,6 +303,7 @@ input[type=submit]:hover {
 /* The dot/bullet/indicator container */
 .dot-container {
     text-align: center;
+    width: 470px;
     padding: 15px;
     background: #ddd;
 }
@@ -308,7 +335,6 @@ q {font-size: 20px;
 
 
 }
-
 
 
 
@@ -428,6 +454,15 @@ q {font-size: 20px;
 
 
 
+@media screen and (max-width:800px) {
+	.content-1 .content-2{
+		width: 100%
+	}
+}
+
+
+
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
     /* START of desktop menu for 768 media query */
@@ -445,6 +480,11 @@ q {font-size: 20px;
         right: 0;
     }
 
+    .home-top-content {
+    	align-content: center;
+
+    }
+
     .menu-desktop a {
         display: inline-flex;
         margin-right: 30px;
@@ -457,6 +497,10 @@ q {font-size: 20px;
     .menu-desktop a:hover {
         color: green;
     }
+    .background-img{
+	background-size: 100vw;
+	background-size: cover;
+}
 
     .desktop {
         display: flex;
@@ -471,7 +515,9 @@ q {font-size: 20px;
 
 
 
-
+.content-1, .content-2, {
+	width: 100%;
+}
 
 
 

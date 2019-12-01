@@ -2,6 +2,10 @@
 $(function() {
 // Your Code from here on down. Don't delete that line above!
   
+
+
+
+
 function toggleIcon() {
     $('.icon').on('click', function(){
         $('.icon').toggleClass('active');
@@ -17,15 +21,24 @@ function closeMobileMenu(){
 
 
 
-function desktopMenu() {
-    $(window).scroll(function() {
-        if ($(this).scrollTop() > 50 && $(window).width() > 768) {
-            $('header.desktop').fadeIn(500);
-        } else {
-            $('header.desktop').fadeOut(500);
-        }
-    })
-}
+
+
+
+$("#slideshow > div:gt(0)").hide();
+
+setInterval(function() { 
+  $('#slideshow > div:first')
+    .fadeOut(1000)
+    .next()
+    .fadeIn(1000)
+    .end()
+    .appendTo('#slideshow');
+},  3000);
+
+
+
+
+
 
 
 
@@ -55,6 +68,10 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
   dots[slideIndex-1].className += " active";
 }
+
+
+
+
 
 
 
