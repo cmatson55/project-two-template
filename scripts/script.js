@@ -75,7 +75,6 @@ function showSlides(n) {
 
 
 
-
 //when the page loads call toggleIcon;
 $(toggleIcon);
 $(closeMobileMenu);
